@@ -4,7 +4,7 @@ type InputProps = InputHTMLAttributes<HTMLInputElement>
 
 const Input = memo((props: InputProps) => (
   <input
-    className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-300"
+    className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-blue-300 dark:text-white"
     aria-label="City name"
     {...props}
   />
