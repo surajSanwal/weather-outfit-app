@@ -7,13 +7,10 @@ GitHub Repository: [https://github.com/surajSanwal/weather-outfit-app](https://g
 ---
 
 ## 🎥 Demo
-
-<!-- Place your working video or demo GIF below. For example: -->
-<!-- ![Weather Outfit App Demo](./demo.gif) -->
-<!-- Or, for a video: -->
-<!-- <video src="demo.mp4" controls width="600"></video> -->
-
 *Working demo video will be placed here.*
+
+<!-- Working demo video -->
+<video src="https://github.com/user-attachments/assets/6f2c949e-e1ec-4af4-b93f-26a166c9ce34" controls width="600"></video>
 
 ---
 
