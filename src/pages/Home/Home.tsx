@@ -4,6 +4,7 @@ import { getOutfitSuggestion } from '@/utils/getOutfitSuggestion'
 import type { RootState } from '@/app/store'
 import SearchBar from '@/components/molecules/SearchBar/SearchBar'
 import WeatherCard from '@/components/organisms/WeatherCard/WeatherCard'
+import { addToHistory } from '@/features/searchHistory/searchHistorySlice'
 
 const Home = () => {
   const dispatch = useDispatch()
@@ -11,6 +12,7 @@ const Home = () => {
 
   const handleSearch = (city: string) => {
     dispatch(fetchWeather({ city }))
+    dispatch(addToHistory(city))
   }
 
   const current = data?.current
