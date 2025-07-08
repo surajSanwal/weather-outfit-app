@@ -7,7 +7,7 @@ import WeatherCard from '@/components/organisms/WeatherCard/WeatherCard'
 
 const Home = () => {
   const dispatch = useDispatch()
-  const { data, loading, error } = useSelector((state: RootState) => state.weather)
+  const { data, loading, error, city: SelectedCity } = useSelector((state: RootState) => state.weather)
 
   const handleSearch = (city: string) => {
     dispatch(fetchWeather({ city }))
@@ -35,6 +35,7 @@ const Home = () => {
           humidity={current.humidity}
           wind={current.wind_speed}
           outfit={outfit}
+          city={SelectedCity}
         />
       )}
     </main>

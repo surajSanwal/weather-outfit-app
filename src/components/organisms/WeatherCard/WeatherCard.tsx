@@ -4,12 +4,16 @@ type Props = {
     humidity: string
     wind: string
     outfit: string
+    city: string
 }
-const WeatherCard = ({ temperature, description, humidity, wind, outfit }: Props) => (
+const WeatherCard = ({ temperature, description, humidity, wind, outfit, city }: Props) => (
     <section
         className="p-4 bg-white dark:bg-gray-900 rounded-xl shadow-md w-full max-w-xl"
         aria-label="Weather details"
     >
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+            Weather in {city}
+        </h2>
         <div className="text-xl font-semibold text-gray-900 dark:text-white capitalize">
             {description}
         </div>
