@@ -16,7 +16,7 @@ import { getGeoCoords, getWeather } from '@/services/weatherService'
 
 import type { SagaIterator } from 'redux-saga'
 
-function* handleFetchWeather(action: ReturnType<typeof fetchWeather>): SagaIterator {
+export function* handleFetchWeather(action: ReturnType<typeof fetchWeather>): SagaIterator {
   try {
     yield delay(500); // Simulate debounce delay
 

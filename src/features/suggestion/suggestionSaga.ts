@@ -8,7 +8,7 @@ import { searchCities } from '@/services/citySearchService'
 
 import { type SagaIterator } from 'redux-saga';
 
-function* handleFetchSuggestions(action: ReturnType<typeof fetchSuggestions>): SagaIterator {
+export function* handleFetchSuggestions(action: ReturnType<typeof fetchSuggestions>): SagaIterator {
   try {
     yield delay(300) // debounce input
     const results: string[] = yield call(searchCities, action.payload.query)
